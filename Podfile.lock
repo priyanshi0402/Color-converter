@@ -1,0 +1,20 @@
+PODS:
+  - IQKeyboardManagerSwift (6.5.11)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - Toast-Swift
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManagerSwift
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: 0c47047a32d9df36b7d1ceb3124f253886559390
+
+COCOAPODS: 1.12.0

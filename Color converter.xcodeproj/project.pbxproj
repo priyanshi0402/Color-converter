@@ -13,9 +13,16 @@
 		5B3298E029FE85A6004D8492 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3298DE29FE85A6004D8492 /* Main.storyboard */; };
 		5B3298E229FE85A8004D8492 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B3298E129FE85A8004D8492 /* Assets.xcassets */; };
 		5B3298E529FE85A8004D8492 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3298E329FE85A8004D8492 /* LaunchScreen.storyboard */; };
+		5B4B332829FE945F0064E819 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4B332729FE945F0064E819 /* CustomView.swift */; };
+		5B4B332A29FE96AA0064E819 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4B332929FE96A90064E819 /* CustomTextField.swift */; };
+		5B4B332C29FE9B4F0064E819 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4B332B29FE9B4F0064E819 /* CustomButton.swift */; };
+		70E63BD5D050CE03C5D8CE84 /* Pods_Color_converter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061D5B228214F896565D045F /* Pods_Color_converter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		061D5B228214F896565D045F /* Pods_Color_converter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Color_converter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FCC56BF5D18BE49B1DAB6F4 /* Pods-Color converter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Color converter.debug.xcconfig"; path = "Target Support Files/Pods-Color converter/Pods-Color converter.debug.xcconfig"; sourceTree = "<group>"; };
+		50005647582308E864FE283F /* Pods-Color converter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Color converter.release.xcconfig"; path = "Target Support Files/Pods-Color converter/Pods-Color converter.release.xcconfig"; sourceTree = "<group>"; };
 		5B3298D529FE85A6004D8492 /* Color converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Color converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B3298D829FE85A6004D8492 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B3298DA29FE85A6004D8492 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		5B3298E129FE85A8004D8492 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B3298E429FE85A8004D8492 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B3298E629FE85A8004D8492 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B4B332729FE945F0064E819 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		5B4B332929FE96A90064E819 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		5B4B332B29FE9B4F0064E819 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70E63BD5D050CE03C5D8CE84 /* Pods_Color_converter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16E8D60120489278238BACD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				061D5B228214F896565D045F /* Pods_Color_converter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FD8CEC3BCC9D4B31F4556B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FCC56BF5D18BE49B1DAB6F4 /* Pods-Color converter.debug.xcconfig */,
+				50005647582308E864FE283F /* Pods-Color converter.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5B3298CC29FE85A6004D8492 = {
 			isa = PBXGroup;
 			children = (
 				5B3298D729FE85A6004D8492 /* Color converter */,
 				5B3298D629FE85A6004D8492 /* Products */,
+				3FD8CEC3BCC9D4B31F4556B8 /* Pods */,
+				16E8D60120489278238BACD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +87,7 @@
 		5B3298D729FE85A6004D8492 /* Color converter */ = {
 			isa = PBXGroup;
 			children = (
+				5B4B332629FE944B0064E819 /* Custom Controls */,
 				5B3298D829FE85A6004D8492 /* AppDelegate.swift */,
 				5B3298DA29FE85A6004D8492 /* SceneDelegate.swift */,
 				5B3298DC29FE85A6004D8492 /* ViewController.swift */,
@@ -67,6 +99,16 @@
 			path = "Color converter";
 			sourceTree = "<group>";
 		};
+		5B4B332629FE944B0064E819 /* Custom Controls */ = {
+			isa = PBXGroup;
+			children = (
+				5B4B332929FE96A90064E819 /* CustomTextField.swift */,
+				5B4B332729FE945F0064E819 /* CustomView.swift */,
+				5B4B332B29FE9B4F0064E819 /* CustomButton.swift */,
+			);
+			path = "Custom Controls";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B3298E929FE85A8004D8492 /* Build configuration list for PBXNativeTarget "Color converter" */;
 			buildPhases = (
+				51027A38821C643388866228 /* [CP] Check Pods Manifest.lock */,
 				5B3298D129FE85A6004D8492 /* Sources */,
 				5B3298D229FE85A6004D8492 /* Frameworks */,
 				5B3298D329FE85A6004D8492 /* Resources */,
+				86045D5250CA9E9E5C7ABE10 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +177,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		51027A38821C643388866228 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Color converter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86045D5250CA9E9E5C7ABE10 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Color converter/Pods-Color converter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Color converter/Pods-Color converter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Color converter/Pods-Color converter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5B3298D129FE85A6004D8492 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5B3298DD29FE85A6004D8492 /* ViewController.swift in Sources */,
+				5B4B332829FE945F0064E819 /* CustomView.swift in Sources */,
+				5B4B332C29FE9B4F0064E819 /* CustomButton.swift in Sources */,
 				5B3298D929FE85A6004D8492 /* AppDelegate.swift in Sources */,
 				5B3298DB29FE85A6004D8492 /* SceneDelegate.swift in Sources */,
+				5B4B332A29FE96AA0064E819 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +371,7 @@
 		};
 		5B3298EA29FE85A8004D8492 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FCC56BF5D18BE49B1DAB6F4 /* Pods-Color converter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,23 +383,28 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.colorconverter.ios.Color-converter";
+				PRODUCT_BUNDLE_IDENTIFIER = com.colorconverter.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		5B3298EB29FE85A8004D8492 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50005647582308E864FE283F /* Pods-Color converter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,18 +416,22 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.colorconverter.ios.Color-converter";
+				PRODUCT_BUNDLE_IDENTIFIER = com.colorconverter.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
